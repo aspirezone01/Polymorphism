@@ -6,8 +6,8 @@ class LoginService{
         return "Login using username and password";
     }
 
-    public void login(String usrname, int otp){
-        System.out.println("Login using usrname and Otp");
+    public void login(String username, int otp){
+        System.out.println("Login using username and Otp");
     }
 }
 
