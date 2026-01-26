@@ -1,0 +1,29 @@
+package methodoverloading;
+
+class LoginService{
+
+    public String login(String username, String password){
+        return "Login using username and password";
+    }
+
+    public void login(String usrname, int otp){
+        System.out.println("Login using usrname and Otp");
+    }
+}
+
+public class MethodOverlo {
+
+    public static void main(String[] args){
+
+        LoginService lg = new LoginService();
+
+        String s = lg.login("samMathur","jedjhjbduknd");
+
+        System.out.println(s);
+
+        lg.login("michealDubey",1234);
+
+
+    }
+
+}
